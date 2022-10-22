@@ -133,10 +133,10 @@ for unit in units:
 MIA_flights=MIA_flights[1:]
 plt.plot(dates,MIA_flights,label="MIA")
 
-plt.title('Annual Total Number of Flights by Airport since 2004')
+plt.title('Annual Total Number of Flights by Airport from 2004 to 2016')
 plt.xlabel('Year')
 plt.xticks(np.arange(2003, 2017, 1))
-plt.ylabel('Total Number of Flights')
+plt.ylabel('Annual Total Number of Flights')
 plt.legend(bbox_to_anchor=(1,1), loc='upper left', borderaxespad=0)
 plt.show()
 
