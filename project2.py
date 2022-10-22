@@ -195,9 +195,9 @@ counts=[youth,twenties,thirties,forties,fifties,sixties,seventy_plus]
 
 fig, ax = plt.subplots()
 ax.bar(terms, counts)
-plt.title('Number of COVID-19 Deaths in Minnesota in 2020 by Age Group')
+plt.title('Approximate Number of COVID-19 Deaths in Minnesota in 2020 by Age Group')
 plt.xlabel('Age Group')
-plt.ylabel('Number of COVID-19 Deaths in Minnesota in 2020')
+plt.ylabel('Approximate Number of COVID-19 Deaths in Minnesota in 2020')
 plt.show()
     
 
