@@ -11,7 +11,7 @@ with open('/Users/hankilong/Documents/Henry Long Claremont McKenna College/CMC S
     text=f.read()
     units+=json.loads(text)
 
-dates = range(2004,2017)
+dates = range(2004,2016)
 date_old=0
 date_new=0
 flight=0
@@ -26,7 +26,7 @@ for unit in units:
             date_old=date_new
         elif date_new==date_old:
             flight+=unit["Statistics"]["Flights"]["Total"]
-ATL_flights=ATL_flights[1:]
+ATL_flights=ATL_flights[2:]
 plt.plot(dates,ATL_flights,label="ATL")
 
 DFW_flights=[]
@@ -39,7 +39,7 @@ for unit in units:
             date_old=date_new
         elif date_new==date_old:
             flight+=unit["Statistics"]["Flights"]["Total"]
-DFW_flights=DFW_flights[1:]
+DFW_flights=DFW_flights[2:]
 plt.plot(dates,DFW_flights,label="DFW")
 
 LAX_flights=[]
@@ -52,7 +52,7 @@ for unit in units:
             date_old=date_new
         elif date_new==date_old:
             flight+=unit["Statistics"]["Flights"]["Total"]
-LAX_flights=LAX_flights[1:]
+LAX_flights=LAX_flights[2:]
 plt.plot(dates,LAX_flights,label="LAX")
 
 ORD_flights=[]
@@ -65,7 +65,7 @@ for unit in units:
             date_old=date_new
         elif date_new==date_old:
             flight+=unit["Statistics"]["Flights"]["Total"]
-ORD_flights=ORD_flights[1:]
+ORD_flights=ORD_flights[2:]
 plt.plot(dates,ORD_flights,label="ORD")
 
 CLT_flights=[]
@@ -78,7 +78,7 @@ for unit in units:
             date_old=date_new
         elif date_new==date_old:
             flight+=unit["Statistics"]["Flights"]["Total"]
-CLT_flights=CLT_flights[1:]
+CLT_flights=CLT_flights[2:]
 plt.plot(dates,CLT_flights,label="CLT")
 
 MCO_flights=[]
@@ -91,7 +91,7 @@ for unit in units:
             date_old=date_new
         elif date_new==date_old:
             flight+=unit["Statistics"]["Flights"]["Total"]
-MCO_flights=MCO_flights[1:]
+MCO_flights=MCO_flights[2:]
 plt.plot(dates,MCO_flights,label="MCO")
 
 LAS_flights=[]
@@ -104,7 +104,7 @@ for unit in units:
             date_old=date_new
         elif date_new==date_old:
             flight+=unit["Statistics"]["Flights"]["Total"]
-LAS_flights=LAS_flights[1:]
+LAS_flights=LAS_flights[2:]
 plt.plot(dates,LAS_flights,label="LAS")
 
 PHX_flights=[]
@@ -117,7 +117,7 @@ for unit in units:
             date_old=date_new
         elif date_new==date_old:
             flight+=unit["Statistics"]["Flights"]["Total"]
-PHX_flights=PHX_flights[1:]
+PHX_flights=PHX_flights[2:]
 plt.plot(dates,PHX_flights,label="PHX")
 
 MIA_flights=[]
@@ -130,12 +130,12 @@ for unit in units:
             date_old=date_new
         elif date_new==date_old:
             flight+=unit["Statistics"]["Flights"]["Total"]
-MIA_flights=MIA_flights[1:]
+MIA_flights=MIA_flights[2:]
 plt.plot(dates,MIA_flights,label="MIA")
 
-plt.title('Annual Total Number of Flights by Airport from 2004 to 2016')
+plt.title('Annual Total Number of Flights by Airport from 2004 to 2015')
 plt.xlabel('Year')
-plt.xticks(np.arange(2003, 2017, 1))
+plt.xticks(np.arange(2003, 2016, 1))
 plt.ylabel('Annual Total Number of Flights')
 plt.legend(bbox_to_anchor=(1,1), loc='upper left', borderaxespad=0)
 plt.show()
