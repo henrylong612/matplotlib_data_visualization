@@ -1,4 +1,4 @@
-# project_02
+# Matplotlib Data Visualization
 
 This GitHub repository contains my submission for project_02 of Mike Izbicki's CS40 class. Instructions for project_02 can be found [here](https://github.com/mikeizbicki/cmc-csci040/tree/2022fall/project_02).
 
